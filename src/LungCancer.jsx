@@ -129,7 +129,7 @@ const LungCancer = () => {
                   <>
                     <p className='text-black font-bold'>
                       Prediction: <span className='text-red-500'>Lung Cancer Detected</span>
-                      <p className='text-black font-bold'>Cancer Type: <span className='text-red-500'>{cancerTypes[prediction]}</span></p>
+                      <p className='text-black font-bold'>Cancer-Type: <span className='text-red-500'>{cancerTypes[prediction]}</span></p>
                     </p>
                     
                       
