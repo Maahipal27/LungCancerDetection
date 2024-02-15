@@ -78,5 +78,75 @@ const LungCancer = () => {
     "Squamous Cell Carcinoma",
    ,
   ];
+  return (
+    <div className='w-full h-min'>
+      <h2 className='md:text-6xl text-blue-400  sm:text-4xl text-2xl font-bold py-2 text-center'>
+        Lung Cancer Prediction
+      </h2>
+      <div className='flex flex-col md:flex-row h-full bg-white w-full '>
+        <div className='h-full w-full md:w-1/2 py-10 m-3'>
+          <h3 className='text-4xl text-center font-extrabold text-black m-3'>
+            How It Works?
+          </h3>
+          <div className='flex flex-col justify-center items-center'>
+            <p className='text-center text-black text-lg m-4 '>
+              Upload an image to predict the likelihood of lung cancer. If lung cancer is detected, click the "Cancer Type" button to find out the type.
+            </p>
+          </div>
+        </div>
+        <div className='h-full w-full md:w-1/2 py-10 m-3'>
+          <h1 className='text-4xl text-center font-extrabold text-black m-3'>
+            Drop The Image
+          </h1>
+          <div className='flex flex-col justify-center items-center'>
+            <input
+              type='file'
+              accept='image/*'
+              onChange={handleImageChange}
+              className='cursor-pointer'
+              onClick={() => setPredictionLoad(false)}
+            />
+            <button
+              onClick={handlePrediction}
+              className='bg-black font-semibold text-blue-400  w-[200px] rounded-md text-lg my-6 mx-auto md:mx-0 py-2 hover:bg-slate-700'
+            >
+              Predict
+            </button>
+
+            {inputImage === null && predictionLoad === true && (
+              <h4 className='font-bold'>Please select an image</h4>
+            )}
+            {inputImage !== null && predictionLoad === true && (
+              <h4 className='font-bold'>Detecting...</h4>
+            )}
+            {predictionLoad === false && prediction !== null && (
+              <>
+                {prediction === 2 ? (
+                  <p className='text-black font-bold'>
+                    Prediction: <span className='text-[#00df9a] '>No Lung Cancer Detected</span>
+                  </p>
+                ) : (
+                  <>
+                    <p className='text-black font-bold'>
+                      Prediction: <span className='text-red-500'>Lung Cancer Detected</span>
+                      <p className='text-black font-bold'>Cancer Type: <span className='text-red-500'>{cancerTypes[prediction]}</span></p>
+                    </p>
+                    
+                      
+                    
+                    {/* {cancerType !== null && (
+                      <p className='text-black font-bold'>Cancer Type: {cancerType}</p>
+                    )} */}
+                  </>
+                )}
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  );
   
 };
+export default LungCancer;
