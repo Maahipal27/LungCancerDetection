@@ -1,4 +1,4 @@
-import LungCancer from "./LungCancer"
+import LungCancer from "./Components/LungCancer"
 const App = () => {
   return (
     <>
