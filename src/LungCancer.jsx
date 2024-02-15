@@ -134,9 +134,7 @@ const LungCancer = () => {
                     
                       
                     
-                    {/* {cancerType !== null && (
-                      <p className='text-black font-bold'>Cancer Type: {cancerType}</p>
-                    )} */}
+                   
                   </>
                 )}
               </>
