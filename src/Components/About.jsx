@@ -39,7 +39,13 @@ const About = () => {
             <br />
             - Explain how early diagnosis contributes to more effective treatment options.
           </p>
-
+          <p className="text-black text-base py-3 font-sans  ">
+            Staging and Treatment Planning:
+            <br />
+            - Discuss the staging process to determine the extent of cancer spread.
+            <br />
+            - Provide an overview of treatment options, which may include surgery, chemotherapy, radiation, and targeted therapies.
+          </p>
        </div>
        </div>
         
