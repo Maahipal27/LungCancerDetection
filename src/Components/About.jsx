@@ -24,6 +24,22 @@ const About = () => {
             <br />
             - Provide information on vaccination, a healthy diet, and regular exercise as preventive measures.
           </p>
+          <p className="text-black text-base py-3 font-sans  ">
+            Early Detection:
+            <br />
+            - Stress the importance of early detection through regular screenings, especially for high-risk individuals.
+            <br />
+            - Educate on recognizing early symptoms such as a persistent cough, chest pain, or difficulty breathing.
+          </p>
+
+          <p className="text-black text-base py-3 font-sans  ">
+            Diagnosis Process:
+            <br />
+            - Outline the diagnostic procedures involved, including imaging tests (X-rays, CT scans), biopsies, and blood tests.
+            <br />
+            - Explain how early diagnosis contributes to more effective treatment options.
+          </p>
+
        </div>
        </div>
         
