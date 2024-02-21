@@ -17,7 +17,13 @@ const About = () => {
             <br />
             - Discuss risk factors that increase the likelihood of developing lung cancer.
           </p>
-
+          <p className="text-black text-base py-3 font-sans  ">
+            Prevention Strategies:
+            <br />
+            - Emphasize lifestyle changes, including smoking cessation and reducing exposure to environmental pollutants.
+            <br />
+            - Provide information on vaccination, a healthy diet, and regular exercise as preventive measures.
+          </p>
        </div>
        </div>
         
