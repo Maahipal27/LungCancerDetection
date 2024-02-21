@@ -3,7 +3,7 @@ const About = () => {
     return ( 
         <div className="about">
 
-<div className=" items-center h-full py-5 ">
+<div className=" flex-col flex  md:flex-row justify-between items-center h-full py-5  ">
       
       <img src="./images/human.jpg" className="flex flex-row px-10 py-14 w-1/1 h-1/1 md:w-2/5 h-4/5  " />
       
