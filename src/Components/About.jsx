@@ -3,13 +3,12 @@ const About = () => {
     return ( 
         <div className="about">
 
-<div className=" flex-col flex  md:flex-row justify-between items-center h-full py-5  ">
+<div className=" flex-col flex  md:flex-row justify-between items-center h-full py-5 ">
       
-      <img src="./images/human.jpg" className="flex flex-row px-10 py-14 w-1/1 h-1/1 md:w-2/5 h-4/5  " />
-      
+      <img src="./images/human.jpg" className="flex flex-row px-10 py-14 w-1/1 h-1/1 md:w-2/5 h-4/5 " />
+      <div >
         <h1 className="text-black text-center text-4xl font-medium py-7 font-sans">More about Lung Cancer</h1>
-       </div>
-       <div className="para">
+        <div className="para">
         <p className="text-black  md:text-base py-3 font-sans ">
             Causes and Risk Factors:
             <br />
@@ -17,6 +16,7 @@ const About = () => {
             <br />
             - Discuss risk factors that increase the likelihood of developing lung cancer.
           </p>
+
           <p className="text-black text-base py-3 font-sans  ">
             Prevention Strategies:
             <br />
@@ -24,6 +24,7 @@ const About = () => {
             <br />
             - Provide information on vaccination, a healthy diet, and regular exercise as preventive measures.
           </p>
+
           <p className="text-black text-base py-3 font-sans  ">
             Early Detection:
             <br />
@@ -39,6 +40,7 @@ const About = () => {
             <br />
             - Explain how early diagnosis contributes to more effective treatment options.
           </p>
+
           <p className="text-black text-base py-3 font-sans  ">
             Staging and Treatment Planning:
             <br />
@@ -46,9 +48,13 @@ const About = () => {
             <br />
             - Provide an overview of treatment options, which may include surgery, chemotherapy, radiation, and targeted therapies.
           </p>
-       </div>
-       </div>
-        
+       
+        </div>
+        </div>
+
+    </div>
+      
+      </div>
      );
 }
  
