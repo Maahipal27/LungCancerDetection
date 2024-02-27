@@ -7,7 +7,7 @@ const App = () => {
     <>
     <Front/>
     <About/>
-    <Bronchipage/>
+    
     <LungCancer/>
 
     
