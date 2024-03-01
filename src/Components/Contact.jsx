@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 
 import emailjs from "@emailjs/browser";
+import EarthRender from "./EarthRender";
 
 const Contact = () => {
   const formRef = useRef();
@@ -54,11 +55,11 @@ const Contact = () => {
 
   return (
     <div className="bg-black h-screen xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
-        <h1  className="text-blue-300 text-4xl pl-10 font-bold ">Contact Us</h1>
+      
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="mt-28 flex flex-col gap-8"
+        className="mt-28 ml-32 flex flex-col gap-8"
       >
         <label className="flex flex-col">
           <span className="text-white font-medium mb-4">Your Name</span>
@@ -103,6 +104,9 @@ const Contact = () => {
           {loading ? "Sending..." : "Send"}
         </button>
       </form>
+      <div className="w-full h-full ">
+          <EarthRender/>
+      </div>
     </div>
   );
 };
