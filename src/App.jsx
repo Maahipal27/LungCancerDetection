@@ -1,7 +1,8 @@
 import About from "./Components/About";
-import Bronchipage from "./Components/Bronchipage";
+
 import Front from "./Components/Front";
 import LungCancer from "./Components/LungCancer"
+import Contact from "./Components/Contact";
 const App = () => {
   return (
     <>
@@ -9,7 +10,8 @@ const App = () => {
     <About/>
     
     <LungCancer/>
-
+    <Contact/>
+    
     
     </>
     );
